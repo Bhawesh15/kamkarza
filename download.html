@@ -1,0 +1,115 @@
+<html>
+<title>
+	Computer 
+</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.logout{
+	background-color: #125688;
+	color:white;
+}
+.h1{
+	size:20px;
+	align:left;
+}
+.drive{
+	width:40px;
+	breath:40px;
+}
+.gdrive{
+	text-decoration:none;
+	overflow: hidden;
+	color:black;
+	left-margin:50px
+}
+</style>
+</head>                                                                                              			
+<body>
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="new 1.html">Gallery</a>
+  <div class="dropdown">
+    <button class="dropbtn">Subjects
+      <i class="fa fa-caret-down"></i>
+    </button>
+		<div class="dropdown-content">
+		<a href="#">Maths</a>
+		<a href="#">English </a>
+		<a href="computer.html">Computer</a>
+		</div>
+	</div> 
+	<a href="#download">Notice</a>
+	<a href="#notice">Downloads</a>
+	<a href="index.html" class="logout" style="position:relative;left:1798px;">Log Out</a>
+</div>
+<h1>Downloads</h1>
+<img src="drive.jpg" class="drive"></img>
+<a href="https://drive.google.com/drive/my-drive" class="gdrive">Google Drive</a>
+</body>
+</html>
+

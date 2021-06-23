@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.fa-instagram{
+	background: #125688;
+	color: white;
+}
+.button{
+	background-color: green;
+	border: none;
+	outline: none;
+	padding: 10px 18px;
+}
+.button a{	
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+}
+</style>
+	<script>
+		function checkPassword(){
+			var password = document.getElementById("passwordBox");
+			var passwordText = password.value;
+			if(passwordText == "bhawesh$#@!"){
+				return true;
+				}
+				alert("Access denied! Incorrect password!");
+				return false;
+				}
+	</script>
+</head>
+<body>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="new 1.html">Gallery</a>
+  <div class="dropdown">
+    <button class="dropbtn">Subjects
+      <i class="fa fa-caret-down"></i>
+    </button>
+		<div class="dropdown-content">
+		<a href="#">Maths</a>
+		<a href="#">English </a>
+		<a href="computer.html">Computer</a>
+		</div>
+	</div> 
+	<a href="#download">Notice</a>
+	<a href="#notice">Downloads</a>
+</div>
+
+	<p style="font-size: 30pt;">Password to visit Gallery</p>
+	<p>Please enter the password to view the photo</p>
+	<p>Password:<input id="passwordBox" type="password"/></p>
+	<button class="button"><a href="gallery.html" onclick="return checkPassword();">Login</a></button>
+</body>
+</html>
+	
